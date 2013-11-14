@@ -3,7 +3,7 @@ Feature: Create Events
 	So that others in the organization can see all the information associated with an event
 	I want to create a new event
 
-Scenario: create a new event
+Scenario: create an event that's accidentally in the past
 	When I go to events page
 	And I hit the create a new event button
 	And then I fill out name with "Huli Huli Chicken Fundraiser"
@@ -13,7 +13,7 @@ Scenario: create a new event
 	And then I fill out event date with "10/12/2013"
 	Then I should see "This date already passed."
 	
-Scenario:  create a new event
+Scenario: create a new event
 	When I go to events page
 	And I hit the create a new event button
 	And then I fill out name with "Huli Huli Chicken Fundraiser"
